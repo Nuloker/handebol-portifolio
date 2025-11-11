@@ -184,7 +184,8 @@ footer {
     padding: 20px;
     margin-top: 40px;
     color: #fff;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
 }
 
