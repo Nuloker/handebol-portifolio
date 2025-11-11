@@ -6,16 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.sidebar a');
     const sections = document.querySelectorAll('.main-content section');
 
-    // Abre a barra lateral ao passar o mouse sobre o ícone do menu
-    menuIcon.addEventListener('mouseenter', () => {
-        sidebar.classList.add('open');
-        mainContent.classList.add('shifted');
-    });
-
-    // Fecha a barra lateral ao tirar o mouse da área da barra lateral
-    sidebar.addEventListener('mouseleave', () => {
-        sidebar.classList.remove('open');
-        mainContent.classList.remove('shifted');
+    // Ação de clique para o ícone do menu para alternar a barra lateral
+    menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+        mainContent.classList.toggle('shifted');
     });
 
     /**

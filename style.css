@@ -232,3 +232,63 @@ footer {
     height: auto;
     border-radius: 15px;
 }
+
+/* Media Query para responsividade em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    /* Ajustes gerais para telas menores */
+    body {
+        padding: 10px; /* Reduz o padding geral */
+    }
+
+    /* Ajuste no contêiner do ícone de menu */
+    .menu-icon-container {
+        top: 20px;
+        left: 20px;
+    }
+
+    /* Ajuste no conteúdo principal */
+    .main-content.shifted {
+        margin-left: 0; /* Remove a margem quando a sidebar estiver aberta */
+    }
+
+    /* Ajustes no cabeçalho */
+    header {
+        flex-direction: column; /* Altera a direção para coluna */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .header-info {
+        margin-left: 0; /* Remove a margem */
+        margin-top: 20px; /* Adiciona espaço acima */
+    }
+
+    /* Foto de perfil em telas menores */
+    .profile-pic {
+        width: 150px; /* Reduz o tamanho da foto */
+        height: 150px;
+        border-radius: 50%; /* Torna a foto circular */
+    }
+
+    /* Ajuste no título principal */
+    header h1 {
+        font-size: 1.8em; /* Reduz o tamanho da fonte */
+    }
+
+    /* Ajuste na grade do currículo */
+    .curriculo-grid {
+        grid-template-columns: 1fr; /* Altera para uma única coluna */
+        gap: 15px;
+    }
+
+    /* Galeria de fotos em telas menores */
+    .gallery {
+        grid-template-columns: 1fr; /* Altera para uma única coluna */
+    }
+
+    /* Contêiner de vídeo em telas menores */
+    .video-container {
+        max-width: 100%; /* Ocupa a largura total */
+        padding-bottom: 56.25%; /* Mantém a proporção do vídeo */
+    }
+}
