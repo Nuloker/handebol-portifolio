@@ -245,11 +245,6 @@ footer {
     /* Ajustes gerais para telas menores */
     body {
         padding: 10px; /* Reduz o padding geral */
-        background-image: url('IMG-20251107-WA0004.jpg');
-        background-size: cover; /* Faz a imagem cobrir toda a área */
-        background-position: center; /* Centraliza a imagem */
-        background-attachment: fixed; /* Deixa a imagem fixa durante o scroll */
-        background-repeat: no-repeat; /* Impede que a imagem se repita */
     }
 
     /* Ajuste no contêiner do ícone de menu */
